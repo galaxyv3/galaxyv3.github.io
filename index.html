@@ -9,6 +9,8 @@
 <body>
   <div class="mdui-appbar">
     <div class="mdui-toolbar mdui-color-indigo">
+      <button mdui-drawer="{target:'#sidebar',overlay:true,swipe:true}" class="mdui-btn mdui-btn-icon mdui-ripple">
+      <i class="mdui-icon material-icons">menu</i></button>
       <a href="javascript:;" class="mdui-typo-headline">GalaxyCenter</a>
       <a href="blog.html" class="mdui-typo-title">Blog</a>
       <div class="mdui-toolbar-spacer"></div>
@@ -20,6 +22,71 @@
       <a href="javascript:;refresh" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">refresh</i></a>
       <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a>
     </div>
+  </div>
+	
+ <div id="sidebar" class="mdui-drawer mdui-drawer-full-height mdui-drawer-close mdui-color-white">
+    <!-- 侧边栏 -->
+    <div>
+      <ul class="mdui-list">
+        <li class="mdui-subheader">我的网站</li>
+        <li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://forum.dffzmxj.com';">
+          <i class="mdui-list-item-icon mdui-icon material-icons">forum</i>
+          <div class="mdui-list-item-content">学神论坛</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple" onclick="window.location.href='http://blogs.dffzmxj.com';">
+          <i class="mdui-list-item-icon mdui-icon material-icons">library_books</i>
+          <div class="mdui-list-item-content">学神博客</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://www.dffzmxj.com/ddnote'">
+          <i class="mdui-list-item-icon mdui-icon material-icons">note</i>
+          <div class="mdui-list-item-content">学神录</div>
+        </li>
+        <li class="mdui-subheader">GitHub</li>
+        <li class="mdui-list-item mdui-ripple" onclick="window.open('http://github.com/dffzmxj');">
+          <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+          <div class="mdui-list-item-content">GitHub个人主页</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple" onclick="window.open('http://github.com/dffzmxj/hi-buluo');">
+          <i class="mdui-list-item-icon mdui-icon material-icons">store</i>
+          <div class="mdui-list-item-content">Hi社(正在开发)</div>
+        </li>
+        <li class="mdui-subheader">推荐链接</li>
+        <li class="mdui-list-item mdui-ripple" onclick="window.open('https://user.qzone.qq.com/2477819731');">
+          <div class="mdui-list-item-avatar">
+            <img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=1950309317,1466002371&fm=58&bpow=1024&bpoh=1024" />
+          </div>
+          <div class="mdui-list-item-content">QQ空间</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple" onclick="window.location.href='mailto:dffzmxj@qq.com';">
+          <i class="mdui-list-item-avatar mdui-icon material-icons">mail</i>
+          <div class="mdui-list-item-content">Email我</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple" onclick="window.open('http://www.mdui.org')" mdui-tooltip="{content:'本网站不稳定，若无法访问请稍后重试'}">
+          <div class="mdui-list-item-avatar">M</div>
+          <div class="mdui-list-item-content">MDUI</div>
+        </li>
+        <li class="mdui-subheader">其它选项</li>
+        <li class="mdui-list-item mdui-ripple" onclick="window.location.href='http://www.dffzmxj.com/game';">
+          <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+          <div class="mdui-list-item-content">彩蛋</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple" onclick="theme()">
+          <i class="mdui-list-item-icon mdui-icon material-icons">color_lens</i>
+          <div class="mdui-list-item-content mdui-text-color-theme-accent">随机主题</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://forum.dffzmxj.com/t/reporting-suggestion';">
+          <i class="mdui-list-item-icon mdui-icon material-icons">report</i>
+          <div class="mdui-list-item-content">反馈建议</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple mdui-hidden-sm-up" onclick="window.location.href='/english.html';">
+          <i class="mdui-list-item-icon mdui-icon material-icons">language</i>
+          <div class="mdui-list-item-content">English Site</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="shadow-line">
+    <!-- 当浏览器划过此处时，自动给导航栏加入阴影 -->
   </div>
   
   <div class="mdui-container">
