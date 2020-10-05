@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="./LOGO.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/mdui.min.css">
+  <script src="./js/mdui.min.js"></script>
+  <title>GalaxyCenter</title>
+</head>
+<body>
+  <div class="mdui-appbar">
+    <div class="mdui-toolbar mdui-color-indigo">
+      <button mdui-drawer="{target:'#sidebar',overlay:true,swipe:true}" class="mdui-btn mdui-btn-icon mdui-ripple">
+      <i class="mdui-icon material-icons">menu</i></button>
+      <a href="javascript:;" class="mdui-typo-headline">GalaxyCenter</a>
+      <a href="blog.html" class="mdui-typo-title">Blog</a>
+      <div class="mdui-toolbar-spacer"></div>
+      <div class="mdui-textfield mdui-textfield-expandable">
+        <button class="mdui-textfield-icon mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></button>
+        <input class="mdui-textfield-input" type="text" placeholder="Search"/>
+        <button class="mdui-textfield-close mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">close</i></button>
+      </div>
+      <a href="javascript:;refresh" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">refresh</i></a>
+      <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a>
+    </div>
+  </div>
+	
+ <div id="sidebar" class="mdui-drawer mdui-drawer-full-height mdui-drawer-close mdui-color-white">
+    <!-- 侧边栏 -->
+    <div>
+      <ul class="mdui-list">
+        <li class="mdui-subheader">我的网站</li>
+        <li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://skyland.flarum.cloud';">
+          <i class="mdui-list-item-icon mdui-icon material-icons">forum</i>
+          <div class="mdui-list-item-content">星空论坛</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple" onclick="window.location.href='/blog.html';">
+          <i class="mdui-list-item-icon mdui-icon material-icons">library_books</i>
+          <div class="mdui-list-item-content">G博客</div>
+        </li>
+        <li class="mdui-subheader">社交网站</li>
+        <li class="mdui-list-item mdui-ripple" onclick="window.open('http://github.com/galaxyv1');">
+          <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+          <div class="mdui-list-item-content">GitHub个人主页</div>
+        </li>
+	  <li class="mdui-list-item mdui-ripple" onclick="window.open('http://aerfaying.com/1136872');">
+          <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+          <div class="mdui-list-item-content">阿儿法营主页</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="shadow-line">
+    <!-- 当浏览器划过此处时，自动给导航栏加入阴影 -->
+  </div>
+  
+  <div class="mdui-container">
+    <br/>
+    <br/>
+    <article class="mdui-card mdui-m-b-5">
+      <header class="mdui-card-media">
+        <img src="material-8.png" style="max-height: 240px;">
+        <div class="mdui-card-media-covered">
+          <div class="mdui-card-primary">
+            <div class="mdui-card-primary-title">Who am I?</div>
+
+		        <div class="mdui-card-primary-subtitle"><i class="mdui-icon material-icons">perm_contact_calendar</i> 2020-06-05 / <i class="mdui-icon material-icons">account_circle</i> Galaxy</div>
+          </div>
+        </div>
+        <div class="mdui-card-menu">
+  
+          
+          
+            <button class="mdui-btn mdui-btn-icon mdui-text-color-white" mdui-menu="{target: '#share_menu', align: 'right'}"><i class="mdui-icon material-icons">share</i></button>
+            <ul class="mdui-menu" id="share_menu">
+              <li class="mdui-menu-item">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://rxmcm.com" target="_blank" class="mdui-ripple">Share to Facebook</a>
+              </li>
+              <li class="mdui-menu-item">
+                <a href="https://plus.google.com/share?url=https://rxmcm.com" target="_blank" class="mdui-ripple">Share to Google+</a>
+              </li>
+              <li class="mdui-menu-item">
+                <a href="http://connect.qq.com/widget/shareqq/index.html?site=Galaxy的主页&title=about&summary=&pics=https://rxmcm.com/LOGO.ico&url=https://rxmcm.com" target="_blank" class="mdui-ripple">Share to QQ</a>
+              </li>
+          
+        </div>
+      </header>
+      <div class="mdui-card-content mdui-typo">
+        <h2 id="Who-am-I？"><a href="#Who-am-I？" class="headerlink" title="Who am I？"></a>我是谁？我在哪？我在做什么？</h2><p>我是Galaxy，欢迎来到我的个人主页！<br>最近我正在学习网页开发，但是我还是个小白（逃</p>
+               <h2 id="About this Page…"><a href="#About this Page…" class="headerlink" title="About this Page…"></a>About this Page…</h2><p>这是一个使用MDUI制作的静态页面~</p>
+               <h2 id="Where-can-you-find-me"><a href="#Where-can-you-find-me" class="headerlink" title="Where can you find me?"></a>Where can you find me?</h2><p><a href="http://wpa.qq.com/msgrd?v=3&uin=3321262302&site=qq&menu=yes" target="_blank" rel="noopener">QQ</a></p>
+               <p><a href="https://www.aerfaying.com/Users/1136872" target="_blank" rel="noopener">阿儿法营</a></p>
+	       <p>邮箱：</p>
+               <p><a href="mailto:3321262302@qq.com">3321262302@qq.com</a></p>
+               <p><a href="mailto:galaxy1@foxmail.com">galaxy1@foxmail.com</a></p>
+        
+      </div>
+      
+                 </article>
+    </div>
+
+    </div>
+</body>
+<script>
+  mdui.snackbar({
+    message: '为了您有更好的体验，请等待所有资源加载完成。由于是静态网页，想要查看最新更新，建议清除浏览器缓存后重新载入页面。',
+    timeout: 6000
+  });
+</script>
+</html>
